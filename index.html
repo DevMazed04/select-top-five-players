@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Select Top Five Players</title>
 
+    <!-- Tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -22,6 +23,7 @@
 </head>
 
 <body class="bg-gray-900">
+    <!------------ header section start ------------>
     <header class="mx-auto">
         <div class="bg-black text-orange-500 pt-8 pb-14">
             <h1 class="text-6xl font-bold text-center mt-6">
@@ -34,7 +36,168 @@
             </p>
         </div>
     </header>
+    <!------------ header section end ------------>
 
+
+
+    <!------------ main section start ------------>
+    <main>
+        <section class="w-3/4 h-auto mx-auto mt-14 mb-14">
+            <div class="grid grid-cols-4 gap-5">
+                <!-- player-1 -->
+                <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
+                    <img class="rounded" src="images/1-messi.png" alt="1-messi" />
+                    <h3 class="text-2xl font-semibold">Lionel Messi</h3>
+                    <p class="font-light text-gray-300">
+                        36 Goals <span class="font-extrabold">-</span> 120 Assist
+                    </p>
+                    <button class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
+                        SELECT
+                    </button>
+                </div>
+
+                <!-- player-2 -->
+                <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
+                    <img class="rounded" src="images/2-neymar.png" alt="2-neymar" />
+                    <h3 class="text-2xl font-semibold">Neymar Jr</h3>
+                    <p class="font-light text-gray-300">
+                        36 Goals <span class="font-extrabold">-</span> 120 Assist
+                    </p>
+                    <button class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
+                        SELECT
+                    </button>
+                </div>
+
+                <!-- player-3 -->
+                <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
+                    <img class="rounded" src="images/3-mbappe.png" alt="3-mbappe" />
+                    <h3 class="text-2xl font-semibold">Kylian Mbappe</h3>
+                    <p class="font-light text-gray-300">
+                        36 Goals <span class="font-extrabold">-</span> 120 Assist
+                    </p>
+                    <button class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
+                        SELECT
+                    </button>
+                </div>
+
+                <!-- Selected-V -->
+                <div class="space-y-3 bg-black pb-5 text-white text-lg text-center rounded border-2 border-slate-800">
+                    <h3 class="text-2xl font-semibold mt-4">Selected-V</h3>
+                    <div class="flex justify-center pt-5">
+                        <ul class="list-decimal text-left space-y-4 text-gray-400 font-bold">
+                            <li>
+                                <span class="ml-3 text-white font-normal">Lionel Messi</span>
+                            </li>
+                            <li>
+                                <span class="ml-3 text-white font-normal">Neymar Jr</span>
+                            </li>
+                            <li>
+                                <span class="ml-3 text-white font-normal">Kylian Mbappe</span>
+                            </li>
+                            <li>
+                                <span class="ml-3 text-white font-normal">Cr Ronaldo</span>
+                            </li>
+                            <li>
+                                <span class="ml-3 text-white font-normal">Sergio Ramos</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- player-4 -->
+                <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
+                    <img class="rounded" src="images/4-ronaldo.png" alt="4-ronaldo" />
+                    <h3 class="text-2xl font-semibold">Cr Ronaldo</h3>
+                    <p class="font-light text-gray-300">
+                        36 Goals <span class="font-extrabold">-</span> 120 Assist
+                    </p>
+                    <button class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
+                        SELECT
+                    </button>
+                </div>
+
+                <!-- player-5 -->
+                <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
+                    <img class="rounded" src="images/5-sergio.png" alt="5-sergio" />
+                    <h3 class="text-2xl font-semibold">Sergio Ramos</h3>
+                    <p class="font-light text-gray-300">
+                        36 Goals <span class="font-extrabold">-</span> 120 Assist
+                    </p>
+                    <button class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
+                        SELECT
+                    </button>
+                </div>
+
+                <!-- player-6 -->
+                <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
+                    <img class="rounded" src="images/6-sanches.png" alt="6-sanches" />
+                    <h3 class="text-2xl font-semibold">Renato Sanches</h3>
+                    <p class="font-light text-gray-300">
+                        36 Goals <span class="font-extrabold">-</span> 120 Assist
+                    </p>
+                    <button class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
+                        SELECT
+                    </button>
+                </div>
+
+                <!-- Budget -->
+                <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
+                    <h3 class="text-2xl font-semibold mt-4">Budget</h3>
+                    <h4 class="text-lg text-gray-400">
+                        Per Player
+                        <input id="per-player-expense"
+                            class="text-white w-24 h-10 outline-none rounded-sm bg-black border-2 px-2 ml-4" type="text"
+                            name="" />
+                    </h4>
+                    <button id="btn-calculate"
+                        class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded-sm hover:bg-sky-900">
+                        Calculate
+                    </button>
+
+                    <div class="w-5/6 mx-auto">
+                        <h4 class="text-lg text-gray-400 flex justify-between">
+                            Player Expenses
+                            <small class="text-lg text-white">$<span id="player-expenses">00</span></small>
+                        </h4>
+                    </div>
+
+                    <div class="w-5/6 mx-auto">
+                        <h4 class="text-lg text-gray-400 flex justify-between items-center">
+                            Manager
+                            <input id="manager-expense"
+                                class="text-white w-24 h-10 outline-none rounded-sm bg-black border-2 px-2 ml-6"
+                                type="text" name="" />
+                        </h4>
+                    </div>
+
+                    <div class="w-5/6 mx-auto">
+                        <h4 class="text-lg text-gray-400 flex justify-between items-center">
+                            Coach
+                            <input id="coach-expense"
+                                class="text-white w-24 h-10 outline-none rounded-sm bg-black border-2 px-2 ml-11"
+                                type="text" name="" />
+                        </h4>
+                    </div>
+
+                    <button id="btn-calculate-total"
+                        class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded-sm hover:bg-sky-900">
+                        Calculate Total
+                    </button>
+
+                    <div class="w-5/6 mx-auto">
+                        <h4 class="text-lg flex justify-between">
+                            Total
+                            <small class="text-lg text-orange-600">$<span id="total-expense">00</span></small>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!------------ main section end ------------>
+
+
+    <!-- JavaScript files link -->
     <script src="js/interaction.js"></script>
 </body>
 
