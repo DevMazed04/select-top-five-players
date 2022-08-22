@@ -8,7 +8,7 @@
     <title>Select Top Five Players</title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="/icons/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/icons/favicon.png" type="image/x-icon" />
     <!-- TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -49,11 +49,14 @@
                 <!-- player-1 -->
                 <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
                     <img class="rounded" src="images/1-messi.png" alt="1-messi" />
-                    <h3 class="text-2xl font-semibold">Lionel Messi</h3>
+                    <h3 id="player-1-name" class="text-2xl font-semibold h3">
+                        Lionel Messi
+                    </h3>
                     <p class="font-light text-gray-300">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
-                    <button class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
+                    <button id="btn-player-1"
+                        class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
                         SELECT
                     </button>
                 </div>
@@ -61,11 +64,12 @@
                 <!-- player-2 -->
                 <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
                     <img class="rounded" src="images/2-neymar.png" alt="2-neymar" />
-                    <h3 class="text-2xl font-semibold">Neymar Jr</h3>
+                    <h3 class="text-2xl font-semibold h3">Neymar Jr</h3>
                     <p class="font-light text-gray-300">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
-                    <button class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
+                    <button id="btn-player-2"
+                        class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
                         SELECT
                     </button>
                 </div>
@@ -86,9 +90,9 @@
                 <div class="space-y-3 bg-black pb-5 text-white text-lg text-center rounded border-2 border-slate-800">
                     <h3 class="text-2xl font-semibold mt-4">Selected-V</h3>
                     <div class="flex justify-center pt-5">
-                        <ul class="list-decimal text-left space-y-4 text-gray-400 font-bold">
+                        <ul class="text-left space-y-4 text-gray-400 font-bold">
                             <li>
-                                <span class="ml-3 text-white font-normal">Lionel Messi</span>
+                                <span id="player-1-selected" class="ml-3 text-white font-normal">Lionel Messi</span>
                             </li>
                             <li>
                                 <span class="ml-3 text-white font-normal">Neymar Jr</span>
@@ -198,6 +202,16 @@
     </main>
     <!------------ main section end ------------>
 
+
+
+    <!------------ footer section start ------------>
+    <footer>
+        <div class="bg-black text-white text-center p-14">
+            <h1 class="text-3xl px-10 mb-3 font-semibold">Top Five</h1>
+            <p>Copyright © 2022 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!------------ footer section end ------------>
 
     
     <!-- JavaScript files link -->
