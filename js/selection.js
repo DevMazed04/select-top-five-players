@@ -10,10 +10,10 @@ document.getElementById("btn-select-1").addEventListener("click", function () {
 
     const liLength = document.querySelectorAll("#selection-list li").length;
     document.getElementById("selected-counter").innerText = liLength;
-    console.log("liLength:", liLength);
 
     if (liLength > 5) {
-        alert("you can not add more than five players");
+        alert("You can not add more than Five players !");
+        document.getElementById("selected-counter").innerText = liLength - 1;
         playerSelectedList.removeChild(li);
         return;
     }
@@ -35,10 +35,10 @@ document.getElementById("btn-select-2").addEventListener("click", function () {
 
     const liLength = document.querySelectorAll("#selection-list li").length;
     document.getElementById("selected-counter").innerText = liLength;
-    console.log("liLength:", liLength);
 
     if (liLength > 5) {
-        alert("you can not add more than five players");
+        alert("You can not add more than Five players !");
+        document.getElementById("selected-counter").innerText = liLength - 1;
         playerSelectedList.removeChild(li);
         return;
     }
@@ -60,10 +60,10 @@ document.getElementById("btn-select-3").addEventListener("click", function () {
 
     const liLength = document.querySelectorAll("#selection-list li").length;
     document.getElementById("selected-counter").innerText = liLength;
-    console.log("liLength:", liLength);
 
     if (liLength > 5) {
-        alert("you can not add more than five players");
+        alert("You can not add more than Five players !");
+        document.getElementById("selected-counter").innerText = liLength - 1;
         playerSelectedList.removeChild(li);
         return;
     }
@@ -85,10 +85,10 @@ document.getElementById("btn-select-4").addEventListener("click", function () {
 
     const liLength = document.querySelectorAll("#selection-list li").length;
     document.getElementById("selected-counter").innerText = liLength;
-    console.log("liLength:", liLength);
 
     if (liLength > 5) {
-        alert("you can not add more than five players");
+        alert("You can not add more than Five players !");
+        document.getElementById("selected-counter").innerText = liLength - 1;
         playerSelectedList.removeChild(li);
         return;
     }
@@ -110,10 +110,10 @@ document.getElementById("btn-select-5").addEventListener("click", function () {
 
     const liLength = document.querySelectorAll("#selection-list li").length;
     document.getElementById("selected-counter").innerText = liLength;
-    console.log("liLength:", liLength);
 
     if (liLength > 5) {
-        alert("you can not add more than five players");
+        alert("You can not add more than Five players !");
+        document.getElementById("selected-counter").innerText = liLength - 1;
         playerSelectedList.removeChild(li);
         return;
     }
@@ -135,10 +135,10 @@ document.getElementById("btn-select-6").addEventListener("click", function () {
 
     const liLength = document.querySelectorAll("#selection-list li").length;
     document.getElementById("selected-counter").innerText = liLength;
-    console.log("liLength:", liLength);
 
     if (liLength > 5) {
-        alert("you can not add more than five players");
+        alert("You can not add more than Five players !");
+        document.getElementById("selected-counter").innerText = liLength - 1;
         playerSelectedList.removeChild(li);
         return;
     }
