@@ -4,16 +4,29 @@ function getPerPlayerExpense(expenseId) {
     return perPlayerExpense;
 }
 
+function inputValidation(perPlayerExpense) {
+    if (isNaN(perPlayerExpense)) {
+        alert("Please! enter a number..");
+    }
+
+    if (perPlayerExpense < 0) {
+        alert("Negative number is not allowed !");
+    }
+}
+
+
 /* ================= Player Expenses Calculate ================= */
 document.getElementById("btn-calculate").addEventListener("click", function () {
     const playerSelectedNumber =
         document.querySelectorAll("#selection-list li").length;
     const perPlayerExpense = getPerPlayerExpense("per-player-expense");
-    const playerExpenses = perPlayerExpense * playerSelectedNumber;
+    inputValidation(perPlayerExpense);
 
+    const playerExpenses = perPlayerExpense * playerSelectedNumber;
     const playerExpensesElement = document.getElementById("player-expenses");
     playerExpensesElement.innerText = playerExpenses;
 });
+
 
 /* ================= Total Expenses Calculate ================= */
 document

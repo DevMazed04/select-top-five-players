@@ -16,6 +16,7 @@ function showAlertForPlayerList(playerListLength, li) {
     document.getElementById("selection-list").removeChild(li);
 }
 
+
 /* =============== player-1 selected =============== */
 document.getElementById("btn-select-1").addEventListener("click", function () {
     const player1Name = getPlayerNameById("player-1-name");
@@ -35,6 +36,7 @@ document.getElementById("btn-select-1").addEventListener("click", function () {
     }
     selectButtonDisable("btn-select-1");
 });
+
 
 /* =============== player-2 selected =============== */
 document.getElementById("btn-select-2").addEventListener("click", function () {
@@ -56,6 +58,7 @@ document.getElementById("btn-select-2").addEventListener("click", function () {
     selectButtonDisable("btn-select-2");
 });
 
+
 /* =============== player-3 selected =============== */
 document.getElementById("btn-select-3").addEventListener("click", function () {
     const player3Name = getPlayerNameById("player-3-name");
@@ -75,6 +78,7 @@ document.getElementById("btn-select-3").addEventListener("click", function () {
     }
     selectButtonDisable("btn-select-3");
 });
+
 
 /* =============== player-4 selected =============== */
 document.getElementById("btn-select-4").addEventListener("click", function () {
@@ -96,6 +100,7 @@ document.getElementById("btn-select-4").addEventListener("click", function () {
     selectButtonDisable("btn-select-4");
 });
 
+
 /* =============== player-5 selected =============== */
 document.getElementById("btn-select-5").addEventListener("click", function () {
     const player5Name = getPlayerNameById("player-5-name");
@@ -115,6 +120,7 @@ document.getElementById("btn-select-5").addEventListener("click", function () {
     }
     selectButtonDisable("btn-select-5");
 });
+
 
 /* =============== player-6 selected =============== */
 document.getElementById("btn-select-6").addEventListener("click", function () {

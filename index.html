@@ -40,17 +40,19 @@
     </header>
     <!------------ header section end ------------>
 
+
     <!------------ main section start ------------>
     <main>
-        <section class="w-3/4 h-auto mx-auto mt-14 mb-14">
-            <div class="grid grid-cols-4 gap-5">
+        <section class="flex justify-center gap-5 mt-14 mb-14">
+            <!------- players grid part ------->
+            <div class="grid grid-cols-3 gap-5 w-3/5">
                 <!-- player-1 -->
                 <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
                     <img class="rounded" src="images/1-messi.png" alt="1-messi" />
                     <h3 id="player-1-name" class="text-2xl font-semibold h3">
                         Lionel Messi
                     </h3>
-                    <p class="font-light text-gray-300">
+                    <p class="font-light text-gray-300 pb-1">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
                     <button id="btn-select-1"
@@ -65,7 +67,7 @@
                     <h3 id="player-2-name" class="text-2xl font-semibold h3">
                         Neymar Jr
                     </h3>
-                    <p class="font-light text-gray-300">
+                    <p class="font-light text-gray-300 pb-1">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
                     <button id="btn-select-2"
@@ -80,7 +82,7 @@
                     <h3 id="player-3-name" class="text-2xl font-semibold">
                         Kylian Mbappe
                     </h3>
-                    <p class="font-light text-gray-300">
+                    <p class="font-light text-gray-300 pb-1">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
                     <button id="btn-select-3"
@@ -89,23 +91,13 @@
                     </button>
                 </div>
 
-                <!-- Selection List -->
-                <div class="space-y-3 bg-black pb-5 text-white text-lg text-center rounded border-2 border-slate-800">
-                    <h3 class="text-2xl font-semibold mt-4">
-                        Selected-<span id="selected-counter">0</span>
-                    </h3>
-                    <div class="flex justify-center pt-5">
-                        <ol id="selection-list" class="list-decimal text-left space-y-4 text-gray-100"></ol>
-                    </div>
-                </div>
-
                 <!-- player-4 -->
                 <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
                     <img class="rounded" src="images/4-ronaldo.png" alt="4-ronaldo" />
                     <h3 id="player-4-name" class="text-2xl font-semibold">
                         Cr Ronaldo
                     </h3>
-                    <p class="font-light text-gray-300">
+                    <p class="font-light text-gray-300 pb-1">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
                     <button id="btn-select-4"
@@ -120,7 +112,7 @@
                     <h3 id="player-5-name" class="text-2xl font-semibold">
                         Sergio Ramos
                     </h3>
-                    <p class="font-light text-gray-300">
+                    <p class="font-light text-gray-300 pb-1">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
                     <button id="btn-select-5"
@@ -135,7 +127,7 @@
                     <h3 id="player-6-name" class="text-2xl font-semibold">
                         Renato Sanches
                     </h3>
-                    <p class="font-light text-gray-300">
+                    <p class="font-light text-gray-300 pb-1">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
                     <button id="btn-select-6"
@@ -143,22 +135,35 @@
                         SELECT
                     </button>
                 </div>
+            </div>
+
+            <!------- selection list and budget part ------->
+            <div class="w-1/5">
+                <!-- Selection List -->
+                <div class="space-y-2 bg-black text-white text-lg text-center rounded border-2 border-slate-800 pb-2">
+                    <h3 class="text-2xl font-semibold mt-4">
+                        Selected-<span id="selected-counter">0</span>
+                    </h3>
+                    <div class="flex justify-center">
+                        <ol id="selection-list" class="list-decimal text-left space-y-4 text-gray-100 mb-4 mt-4"></ol>
+                    </div>
+                </div>
 
                 <!-- Budget -->
-                <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
-                    <h3 class="text-2xl font-semibold mt-4">Budget</h3>
+                <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800 mt-5 mb-5">
+                    <h3 class="text-2xl font-semibold mt-4 mb-7">Budget</h3>
                     <h4 class="text-lg text-gray-400">
                         Per Player
                         <input id="per-player-expense"
-                            class="text-white w-24 h-10 outline-none rounded-sm bg-black border-2 px-2 ml-4" type="text"
-                            name="" />
+                            class="text-white w-24 h-10 outline-none rounded-sm bg-black border-2 px-2 ml-4 mb-1"
+                            type="text" name="" />
                     </h4>
                     <button id="btn-calculate"
                         class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded-sm hover:bg-sky-900">
                         Calculate
                     </button>
                     <div class="w-5/6 mx-auto">
-                        <h4 class="text-lg text-gray-400 flex justify-between">
+                        <h4 class="text-lg text-gray-400 flex justify-between mt-6">
                             Player Expenses
                             <small class="text-lg text-white">$<span id="player-expenses">00</span></small>
                         </h4>
@@ -175,7 +180,7 @@
                         <h4 class="text-lg text-gray-400 flex justify-between items-center">
                             Coach
                             <input id="coach-expense"
-                                class="text-white w-24 h-10 outline-none rounded-sm bg-black border-2 px-2 ml-11"
+                                class="text-white w-24 h-10 outline-none rounded-sm bg-black border-2 px-2 ml-11 mb-1"
                                 type="text" name="" />
                         </h4>
                     </div>
@@ -186,7 +191,7 @@
                     <div class="w-5/6 mx-auto">
                         <h4 class="text-lg flex justify-between">
                             Total
-                            <small class="text-lg text-orange-600">$<span id="total-expenses">00</span></small>
+                            <small class="text-lg text-orange-600 mb-1">$<span id="total-expenses">00</span></small>
                         </h4>
                     </div>
                 </div>
@@ -194,6 +199,7 @@
         </section>
     </main>
     <!------------ main section end ------------>
+
 
     <!------------ footer section start ------------>
     <footer>
@@ -203,6 +209,7 @@
         </div>
     </footer>
     <!------------ footer section end ------------>
+
 
     <!-- JavaScript files link -->
     <script src="js/selection.js"></script>
