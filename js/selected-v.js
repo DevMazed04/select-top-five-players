@@ -2,6 +2,7 @@
 document.getElementById('btn-select-1').addEventListener('click', function () {
     const player1Element = document.getElementById('player-1-name');
     const player1Name = player1Element.innerText;
+    console.log(player1Name)
 
     const playerSelectedList = document.getElementById('player-selected-list');
     const li = document.createElement('li');
@@ -30,4 +31,3 @@ document.getElementById('btn-select-3').addEventListener('click', function () {
     li.innerText = player3Name;
     playerSelectedList.appendChild(li);
 })
-
