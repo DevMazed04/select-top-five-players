@@ -1,10 +1,14 @@
+function getPerPlayerExpense(expenseId) {
+    const perPlayerExpenseField = document.getElementById(expenseId);
+    const perPlayerExpense = parseFloat(perPlayerExpenseField.value);
+    return perPlayerExpense;
+}
+
 /* ================= Player Expenses Calculate ================= */
 document.getElementById("btn-calculate").addEventListener("click", function () {
-    const perPlayerExpenseField = document.getElementById("per-player-expense");
-    const perPlayerExpense = parseFloat(perPlayerExpenseField.value);
-
     const playerSelectedNumber =
         document.querySelectorAll("#selection-list li").length;
+    const perPlayerExpense = getPerPlayerExpense("per-player-expense");
     const playerExpenses = perPlayerExpense * playerSelectedNumber;
 
     const playerExpensesElement = document.getElementById("player-expenses");
@@ -23,9 +27,8 @@ document
 
         const playerSelectedNumber =
             document.querySelectorAll("#selection-list li").length;
-        const playerExpenses =
-            parseFloat(document.getElementById("per-player-expense").value) *
-            playerSelectedNumber;
+        const perPlayerExpense = getPerPlayerExpense("per-player-expense");
+        const playerExpenses = perPlayerExpense * playerSelectedNumber;
 
         const totalExpenses = playerExpenses + managerExpense + coachExpense;
         const totalExpensesElement = document.getElementById("total-expenses");
