@@ -40,8 +40,6 @@
     </header>
     <!------------ header section end ------------>
 
-
-
     <!------------ main section start ------------>
     <main>
         <section class="w-3/4 h-auto mx-auto mt-14 mb-14">
@@ -55,7 +53,7 @@
                     <p class="font-light text-gray-300">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
-                    <button id="btn-player-1"
+                    <button id="btn-select-1"
                         class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
                         SELECT
                     </button>
@@ -64,11 +62,13 @@
                 <!-- player-2 -->
                 <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
                     <img class="rounded" src="images/2-neymar.png" alt="2-neymar" />
-                    <h3 class="text-2xl font-semibold h3">Neymar Jr</h3>
+                    <h3 id="player-2-name" class="text-2xl font-semibold h3">
+                        Neymar Jr
+                    </h3>
                     <p class="font-light text-gray-300">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
-                    <button id="btn-player-2"
+                    <button id="btn-select-2"
                         class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
                         SELECT
                     </button>
@@ -77,11 +77,14 @@
                 <!-- player-3 -->
                 <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
                     <img class="rounded" src="images/3-mbappe.png" alt="3-mbappe" />
-                    <h3 class="text-2xl font-semibold">Kylian Mbappe</h3>
+                    <h3 id="player-3-name" class="text-2xl font-semibold">
+                        Kylian Mbappe
+                    </h3>
                     <p class="font-light text-gray-300">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
-                    <button class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
+                    <button id="btn-select-3"
+                        class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
                         SELECT
                     </button>
                 </div>
@@ -90,34 +93,25 @@
                 <div class="space-y-3 bg-black pb-5 text-white text-lg text-center rounded border-2 border-slate-800">
                     <h3 class="text-2xl font-semibold mt-4">Selected-V</h3>
                     <div class="flex justify-center pt-5">
-                        <ul class="text-left space-y-4 text-gray-400 font-bold">
-                            <li>
-                                <span id="player-1-selected" class="ml-3 text-white font-normal">Lionel Messi</span>
-                            </li>
-                            <li>
-                                <span class="ml-3 text-white font-normal">Neymar Jr</span>
-                            </li>
-                            <li>
-                                <span class="ml-3 text-white font-normal">Kylian Mbappe</span>
-                            </li>
-                            <li>
-                                <span class="ml-3 text-white font-normal">Cr Ronaldo</span>
-                            </li>
-                            <li>
-                                <span class="ml-3 text-white font-normal">Sergio Ramos</span>
-                            </li>
-                        </ul>
+                        <ol id="player-selected-list" class="list-decimal text-left space-y-4 text-gray-200 font-bold">
+                            <!-- <li>
+                                <span id="player-selected-1" class="ml-3 text-white font-normal"></span>
+                            </li> -->
+                        </ol>
                     </div>
                 </div>
 
                 <!-- player-4 -->
                 <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
                     <img class="rounded" src="images/4-ronaldo.png" alt="4-ronaldo" />
-                    <h3 class="text-2xl font-semibold">Cr Ronaldo</h3>
+                    <h3 id="player-4-name" class="text-2xl font-semibold">
+                        Cr Ronaldo
+                    </h3>
                     <p class="font-light text-gray-300">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
-                    <button class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
+                    <button id="btn-select-4"
+                        class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
                         SELECT
                     </button>
                 </div>
@@ -125,11 +119,14 @@
                 <!-- player-5 -->
                 <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
                     <img class="rounded" src="images/5-sergio.png" alt="5-sergio" />
-                    <h3 class="text-2xl font-semibold">Sergio Ramos</h3>
+                    <h3 id="player-5-name" class="text-2xl font-semibold">
+                        Sergio Ramos
+                    </h3>
                     <p class="font-light text-gray-300">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
-                    <button class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
+                    <button id="btn-select-5"
+                        class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
                         SELECT
                     </button>
                 </div>
@@ -137,11 +134,14 @@
                 <!-- player-6 -->
                 <div class="space-y-3 bg-black pb-5 text-white text-center rounded border-2 border-slate-800">
                     <img class="rounded" src="images/6-sanches.png" alt="6-sanches" />
-                    <h3 class="text-2xl font-semibold">Renato Sanches</h3>
+                    <h3 id="player-6-name" class="text-2xl font-semibold">
+                        Renato Sanches
+                    </h3>
                     <p class="font-light text-gray-300">
                         36 Goals <span class="font-extrabold">-</span> 120 Assist
                     </p>
-                    <button class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
+                    <button id="btn-select-6"
+                        class="bg-blue-800 py-2 mx-auto block w-10/12 font-semibold rounded hover:bg-sky-900">
                         SELECT
                     </button>
                 </div>
@@ -202,8 +202,6 @@
     </main>
     <!------------ main section end ------------>
 
-
-
     <!------------ footer section start ------------>
     <footer>
         <div class="bg-black text-white text-center p-14">
@@ -213,7 +211,6 @@
     </footer>
     <!------------ footer section end ------------>
 
-    
     <!-- JavaScript files link -->
     <script src="js/interaction.js"></script>
     <script src="js/expense-calculation.js"></script>
